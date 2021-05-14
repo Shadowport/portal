@@ -1,0 +1,224 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Shadowport</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-142376602-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-142376602-2");
+    </script>
+    <script>
+      function getUrlParameter(sParam) {
+        var sPageURL = window.location.search.substring(1);
+        var sURLVariables = sPageURL.split("&");
+        for (var i = 0; i < sURLVariables.length; i++) {
+          var sParameterName = sURLVariables[i].split("=");
+          if (sParameterName[0] == sParam) {
+            return sParameterName[1];
+          }
+        }
+      }
+      $(document).ready(function () {
+        var subscribed = getUrlParameter("subscribed");
+
+        if (subscribed === "true") {
+          [].forEach.call(
+            document.querySelectorAll(
+              "#android-button, #field-email, .button-wrapper, #enter-label, .right-button, #submit-button"
+            ),
+            function (el) {
+              el.classList.add("extended");
+            }
+          );
+          [].forEach.call(
+            document.querySelectorAll(
+              "#android-button, #success-message, #success-message-mobile, .js-cm-form"
+            ),
+            function (el) {
+              el.classList.add("subscribed");
+            }
+          );
+        }
+      });
+    </script>
+
+    <link rel=stylesheet href=resources/css/style.css>
+
+    <script src="resources/js/mobile-helper.js"></script>
+    <script defer src="resources/js/emoji-pop.js"></script>
+    <script
+      type="text/javascript"
+      src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"
+    ></script>
+  </head>
+
+  <body>
+    <div id="background-gradient"></div>
+    <div id="content">
+      <nav>
+        <a href="/">🪐 Portal 
+        
+        </a>
+
+        <!--ul>
+          <a
+            class="nav-twitter"
+            href="https://twitter.com/rainbowdotme"
+            target="_blank"
+            >twitter</a
+          >
+          <a class="nav-contact" href="/cdn-cgi/l/email-protection#4b232e2727240b392a222529243c65262e">contact</a>
+        </ul-->
+      </nav>
+
+      <div class="button-wrapper">
+      
+
+      
+
+      <div style="text-align: left;">
+        <h1>Say hello to the world faster than you think.
+        </h1>
+      <h2 style="color: gray;">Portal VPN is now in public beta with free access.</h2>
+
+
+      <div class="button-wrapper">
+          
+        <a
+          href="https://apps.apple.com/us/app/rainbow-ethereum-wallet/id1457119021"
+          id="app-store-button"
+        >
+          <div></div>
+        </a>
+
+        <a
+          href="https://apps.apple.com/us/app/rainbow-ethereum-wallet/id1457119021"
+          id="android-store-button"
+        >
+          <div></div>
+        </a>
+
+    </div>
+
+        <div class="button-wrapper">
+
+        <a
+        href="https://apps.apple.com/us/app/rainbow-ethereum-wallet/id1457119021"
+        
+      >
+      </a>
+
+        
+
+        <!--div
+          id="android-button"
+          onclick="document.getElementById('app-store-button').style.animationPlayState='paused';
+          document.getElementById('android-icon').style.animationPlayState='paused';
+          document.getElementById('android-icon-wrapper').style.animationPlayState='paused';
+          document.getElementById('mail-icon').style.animationPlayState='paused';
+          this.classList.add('extended');
+          document.getElementById('android-button').classList.add('lock-scale');"
+        >
+          <form
+            action="https://www.createsend.com/t/subscribeerror?description="
+            class="js-cm-form"
+            data-id="2BE4EF332AA2E32596E38B640E905619335AA4702162DB29C77C830546D984231B919CA43AA17098DAF311B20903A9A28D403C24A8FA7EB5BE0BD85B5138C829"
+            id="subForm"
+            method="post"
+          >
+            <div class="right-button">
+              <p id="enter-label">enter</p>
+              <input id="submit-button" type="submit" value="submit" />
+            </div>
+            <input
+              aria-label="Email"
+              class="js-cm-email-input qa-input-email"
+              id="field-email"
+              maxlength="200"
+              name="cm-ykjhiru-ykjhiru"
+              onblur="if (this.value) {
+                return;
+              } else {
+                [].forEach.call(document.querySelectorAll('#android-button, #field-email, .button-wrapper, #enter-label, .right-button, #submit-button'), function(el) {
+                  el.classList.remove('extended');
+                });
+                document.getElementById('android-button').classList.remove('lock-scale');
+                document.getElementById('app-store-button').style.animationPlayState='running';
+                document.getElementById('android-icon').style.animationPlayState='running'
+                document.getElementById('android-icon-wrapper').style.animationPlayState='running';
+                document.getElementById('mail-icon').style.animationPlayState='running';
+              }"
+              onfocus="[].forEach.call(document.querySelectorAll('#android-button, #field-email, .button-wrapper, #enter-label, .right-button, #submit-button'), function(el) {
+                el.classList.add('extended');
+              });"
+              oninput="const isValidEmail = this.checkValidity();
+              const lastChar = this.value[this.value.length -1];
+              if (lastChar === '.') {
+                return;
+              } else if (isValidEmail) {
+                document.getElementById('enter-label').style.display='block';
+                document.getElementById('submit-button').style.display='block';
+              } else {
+                document.getElementById('enter-label').style.display='none';
+                document.getElementById('submit-button').style.display='none';
+              };"
+              placeholder="Play Store email"
+              required
+              spellcheck="false"
+              type="email"
+            />
+            <div id="android-icon-wrapper">
+              <div id="android-icon"></div>
+            </div>
+            <div id="mail-icon"></div>
+            <p class="input-label">Join the Android beta</p>
+          </form>
+          <div id="success-message">
+            🎉&nbsp; You’re on the list. Stay tuned! &nbsp;🎉
+          </div>
+          <div id="success-message-mobile">
+            🎉&nbsp; You’re on the list! &nbsp;🎉
+          </div>
+        </div-->
+      </div>
+    </div>
+
+    <div class="app-preview">
+        <div>
+          <img src="resources/css/images/preview2.png" />
+        </div>
+      </div>
+</div>
+
+
+     
+
+      
+      <footer>
+        <div class="divider"></div>
+
+        <div class="about">
+          <a href="https://github.com/rainbow-me/rainbow" target="_blank"><h3>🖖 Dif-tor heh smusma</h3></a>
+          <br>
+          <p>© Shadowport</p>
+        </div>
+      </footer>
+    </div>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
+
