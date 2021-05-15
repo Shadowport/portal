@@ -1,81 +1,73 @@
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta name="color-scheme">
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Shadowport</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-142376602-2"
-    ></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142376602-2"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
 
-      gtag("config", "UA-142376602-2");
+        gtag("config", "UA-142376602-2");
     </script>
     <script>
-      function getUrlParameter(sParam) {
-        var sPageURL = window.location.search.substring(1);
-        var sURLVariables = sPageURL.split("&");
-        for (var i = 0; i < sURLVariables.length; i++) {
-          var sParameterName = sURLVariables[i].split("=");
-          if (sParameterName[0] == sParam) {
-            return sParameterName[1];
-          }
+        function getUrlParameter(sParam) {
+            var sPageURL = window.location.search.substring(1);
+            var sURLVariables = sPageURL.split("&");
+            for (var i = 0; i < sURLVariables.length; i++) {
+                var sParameterName = sURLVariables[i].split("=");
+                if (sParameterName[0] == sParam) {
+                    return sParameterName[1];
+                }
+            }
         }
-      }
-      $(document).ready(function () {
-        var subscribed = getUrlParameter("subscribed");
+        $(document).ready(function () {
+            var subscribed = getUrlParameter("subscribed");
 
-        if (subscribed === "true") {
-          [].forEach.call(
-            document.querySelectorAll(
-              "#android-button, #field-email, .button-wrapper, #enter-label, .right-button, #submit-button"
-            ),
-            function (el) {
-              el.classList.add("extended");
+            if (subscribed === "true") {
+                [].forEach.call(
+                    document.querySelectorAll(
+                        "#android-button, #field-email, .button-wrapper, #enter-label, .right-button, #submit-button"
+                    ),
+                    function (el) {
+                        el.classList.add("extended");
+                    }
+                );
+                [].forEach.call(
+                    document.querySelectorAll(
+                        "#android-button, #success-message, #success-message-mobile, .js-cm-form"
+                    ),
+                    function (el) {
+                        el.classList.add("subscribed");
+                    }
+                );
             }
-          );
-          [].forEach.call(
-            document.querySelectorAll(
-              "#android-button, #success-message, #success-message-mobile, .js-cm-form"
-            ),
-            function (el) {
-              el.classList.add("subscribed");
-            }
-          );
-        }
-      });
+        });
     </script>
 
     <link rel=stylesheet href=resources/css/style.css>
 
     <script src="resources/js/mobile-helper.js"></script>
     <script defer src="resources/js/emoji-pop.js"></script>
-    <script
-      type="text/javascript"
-      src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"
-    ></script>
-  </head>
+    <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
+</head>
 
-  <body>
+<body>
     <div id="background-gradient"></div>
     <div id="content">
-      <nav>
-        <a href="/">🪐 Portal 
-        
-        </a>
+        <nav>
+            <a href="/">🪐 Portal
 
-        <!--ul>
+            </a>
+
+            <!--ul>
           <a
             class="nav-twitter"
             href="https://twitter.com/rainbowdotme"
@@ -84,64 +76,49 @@
           >
           <a class="nav-contact" href="/cdn-cgi/l/email-protection#4b232e2727240b392a222529243c65262e">contact</a>
         </ul-->
-      </nav>
+        </nav>
 
-      <div class="button-wrapper">
-        <div class="app-preview">
-            <div>
-              <img src="resources/css/images/preview2.png" />
+
+
+
+
+
+        <div style="text-align: center;">
+            <br><br><br><br>
+            <img style="width: 300px;" src="resources/css/images/access.png" /><br><br><br><br>
+            <h2 style="color: #fff;">Hey 👋 Space Hitchhiker </h2>
+            <h3 style="color: gray;">Welcome On-board.</h3>
+            <div class="button-wrapper">
+                <a id="connectbutton"
+                    href="ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3ajFjUmRiY3Y3MnU@199.180.112.52:2652/?outline=1"
+                    data-clipboard-text="ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3ajFjUmRiY3Y3MnU@199.180.112.52:2652/?outline=1">
+                    <div></div>
+                </a>
             </div>
-          </div>
-      
-
-      
-
-      <div style="text-align: left;">
-        <h1>Say hello to the world faster than you think.
-        </h1>
-      <h2 style="color: gray;">Portal VPN is now in public beta with free access.</h2>
-
-
-      <div class="button-wrapper">
-          
-        <a
-          href="https://apps.apple.com/us/app/rainbow-ethereum-wallet/id1457119021"
-          id="app-store-button"
-        >
-          <div></div>
-        </a>
-
-        <a
-          href="https://apps.apple.com/us/app/rainbow-ethereum-wallet/id1457119021"
-          id="android-store-button"
-        >
-          <div></div>
-        </a>
-
-    </div>
-
-        <div class="button-wrapper">
-
-        <a
-        href="https://apps.apple.com/us/app/rainbow-ethereum-wallet/id1457119021"
-        
-      >
-      </a>
-      </div>
-    </div>
-
-
-</div> 
-      <footer>
-        <div class="divider"></div>
-
-        <div class="about">
-          <a href="/" target="_blank"><h3>🖖 Dif-tor heh smusma</h3></a>
-          <br>
-          <p>© Shadowport</p>
         </div>
-      </footer>
-    </div>
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
-</html>
 
+
+
+        <footer>
+            <div class="divider"></div>
+
+            <div class="about">
+                <a href="/" target="_blank">
+                    <h3>🖖 Dif-tor heh smusma</h3>
+                </a>
+                <br>
+                <p>© Shadowport</p>
+            </div>
+        </footer>
+    </div>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="dist/clipboard.min.js"></script>
+    <script>
+        var btn = document.getElementById('connectbutton');
+        var clipboard = new ClipboardJS(connectbutton);
+    </script>
+
+
+</body>
+
+</html>
