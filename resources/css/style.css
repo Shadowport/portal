@@ -49,6 +49,12 @@
     --background-color2: #000;
     --text-color: #fff;
   }
+  #app-store-button div {
+    background: url(images/app-store-button1.svg) #000000 center no-repeat;
+  }
+  #android-store-button div {
+    background: url(images/firebase-button1.svg) #000000 center no-repeat;
+  }
 }
 
 body {
@@ -300,6 +306,11 @@ h2 {
   top: 2.5px;
   width: 172px;
 }
+@media (prefers-color-scheme: dark) {
+  #app-store-button div {
+    background: url(images/app-store-button1.svg) #000000 center no-repeat;
+  }
+}
 
 
 #android-store-button {
@@ -332,6 +343,11 @@ h2 {
   position: absolute;
   top: 2.5px;
   width: 172px;
+}
+@media (prefers-color-scheme: dark) {
+  #android-store-button div {
+    background: url(images/firebase-button1.svg) #000000 center no-repeat;
+  }
 }
 
 
