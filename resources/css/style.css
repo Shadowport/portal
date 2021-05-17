@@ -275,6 +275,11 @@ h2 {
   top: 2.5px;
   width: 172px;
 }
+@media (prefers-color-scheme: dark) {
+  #app-store-button div {
+    background: url(images/connectbutton1.svg) #000000 center no-repeat;
+  }
+}
 
 #app-store-button {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -351,13 +356,11 @@ h2 {
 }
 
 
-#mac-store-button {
+#macos-button {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  animation: rainbow-button 5s infinite;
-  background-color: #00f8ff;
+
+  background-color: #F18D8D;
   border-radius: 18px;
-  box-shadow: 0 5px 15px rgba(0, 248, 255, 0.4),
-    0 10px 30px rgba(37, 41, 46, 0.2);
   cursor: pointer;
   display: block;
   height: 63px;
@@ -367,21 +370,26 @@ h2 {
   width: 177px;
   z-index: 2;
 }
-#mac-store-button:hover {
+#macos-button:hover {
   transform: scale(1.075);
 }
-#mac-store-button:active {
+#macos-button:active {
   transform: scale(0.92);
 }
 
-#mac-store-button div {
-  background: url(images/mac-store-button.svg) #000000 center no-repeat;
+#macos-button div {
+  background: url(images/macos.svg) #000000 center no-repeat;
   border-radius: 15.5px;
   height: 58px;
   left: 2.5px;
   position: absolute;
   top: 2.5px;
   width: 172px;
+}
+@media (prefers-color-scheme: dark) {
+  #macos-button div {
+    background: url(images/macos1.svg) #000000 center no-repeat;
+  }
 }
 
 
