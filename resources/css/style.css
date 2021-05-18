@@ -116,7 +116,7 @@ nav a {
   position: relative;
   transition: 0.125s ease;
   will-change: transform;
-  margin-top: 8px;
+  margin-top: 16px;
 }
 nav a:hover {
   animation: shadow-links 5s infinite;
@@ -136,7 +136,6 @@ nav ul a {
   display: inline-block;
   font-size: 1.25em;
   font-weight: 500;
-  margin-left: 19px;
   position: relative;
   transition: 0.125s ease;
   will-change: transform;
@@ -153,6 +152,17 @@ nav ul a:active {
 }
 .nav-twitter:before {
   content: "🌍";
+  height: 18px;
+  left: 0;
+  position: absolute;
+  top: 1px;
+  width: 22px;
+}
+.nav-p {
+  padding-left: 29px;
+}
+.nav-p:before {
+  content: "🔏";
   height: 18px;
   left: 0;
   position: absolute;
