@@ -572,6 +572,10 @@ p#enter-label {
   position: relative;
 }
 
+p {
+  color: var(--text-color);
+}
+
 
 
 

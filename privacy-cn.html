@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Portal is a VPN app provide by Shadowport">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+    <meta name="apple-mobile-web-app-title" content="Portal">
+    <meta name="application-name" content="Portal">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="color-scheme">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Portal</title>
+    <link rel=stylesheet href=resources/css/style.css>
+    <script src="resources/js/mobile-helper.js"></script>
+    <script defer src="resources/js/emoji-pop.js"></script>
+</head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>安全与隐私</title><style>
+	/* webkit printing magic: print all background colors */
+	html {
+		-webkit-print-color-adjust: exact;
+	}
+	* {
+		box-sizing: border-box;
+		-webkit-print-color-adjust: exact;
+	}
+	
+	html,
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	@media only screen {
+		body {
+			margin: 2em auto;
+			max-width: 900px;
+			color: rgb(55, 53, 47);
+		}
+	}
+	
+	body {
+		line-height: 1.5;
+		white-space: pre-wrap;
+	}
+	
+	a,
+	a.visited {
+		color: inherit;
+		text-decoration: underline;
+	}
+	
+	.pdf-relative-link-path {
+		font-size: 80%;
+		color: #444;
+	}
+	
+	h1,
+	h2,
+	h3 {
+		letter-spacing: -0.01em;
+		line-height: 1.2;
+		font-weight: 600;
+		margin-bottom: 0;
+		padding-left: 0;
+		max-width: 100%;
+	}
+	
+	.page-title {
+		font-size: 2.5rem;
+		font-weight: 700;
+		margin-top: 0;
+		margin-bottom: 0.75em;
+	}
+	
+	h1 {
+		font-size: 1.875rem;
+		margin-top: 1.875rem;
+	}
+	
+	h2 {
+		font-size: 1.5rem;
+		margin-top: 1.5rem;
+	}
+	
+	h3 {
+		font-size: 1.25rem;
+		margin-top: 1.25rem;
+	}
+	
+	.source {
+		border: 1px solid #ddd;
+		border-radius: 3px;
+		padding: 1.5em;
+		word-break: break-all;
+	}
+	
+	.callout {
+		border-radius: 3px;
+		padding: 1rem;
+	}
+	
+	figure {
+		margin: 1.25em 0;
+		page-break-inside: avoid;
+	}
+	
+	figcaption {
+		opacity: 0.5;
+		font-size: 85%;
+		margin-top: 0.5em;
+	}
+	
+	mark {
+		background-color: transparent;
+	}
+	
+	.indented {
+		padding-left: 1.5em;
+	}
+	
+	hr {
+		background: transparent;
+		display: block;
+		width: 100%;
+		height: 1px;
+		visibility: visible;
+		border: none;
+		border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+	}
+	
+	img {
+		max-width: 100%;
+	}
+	
+	@media only print {
+		img {
+			max-height: 100vh;
+			object-fit: contain;
+		}
+	}
+	
+	@page {
+		margin: 1in;
+	}
+	
+	.collection-content {
+		font-size: 0.875rem;
+	}
+	
+	.column-list {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.column {
+		padding: 0 1em;
+	}
+	
+	.column:first-child {
+		padding-left: 0;
+	}
+	
+	.column:last-child {
+		padding-right: 0;
+	}
+	
+	.table_of_contents-item {
+		display: block;
+		font-size: 0.875rem;
+		line-height: 1.3;
+		padding: 0.125rem;
+	}
+	
+	.table_of_contents-indent-1 {
+		margin-left: 1.5rem;
+	}
+	
+	.table_of_contents-indent-2 {
+		margin-left: 3rem;
+	}
+	
+	.table_of_contents-indent-3 {
+		margin-left: 4.5rem;
+	}
+	
+	.table_of_contents-link {
+		text-decoration: none;
+		opacity: 0.7;
+		border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+	}
+	
+	table,
+	th,
+	td {
+		border: 1px solid rgba(55, 53, 47, 0.09);
+		border-collapse: collapse;
+	}
+	
+	table {
+		border-left: none;
+		border-right: none;
+	}
+	
+	th,
+	td {
+		font-weight: normal;
+		padding: 0.25em 0.5em;
+		line-height: 1.5;
+		min-height: 1.5em;
+		text-align: left;
+	}
+	
+	th {
+		color: rgba(55, 53, 47, 0.6);
+	}
+	
+	ol,
+	ul {
+		margin: 0;
+		margin-block-start: 0.6em;
+		margin-block-end: 0.6em;
+	}
+	
+	li > ol:first-child,
+	li > ul:first-child {
+		margin-block-start: 0.6em;
+	}
+	
+	ul > li {
+		list-style: disc;
+	}
+	
+	ul.to-do-list {
+		text-indent: -1.7em;
+	}
+	
+	ul.to-do-list > li {
+		list-style: none;
+	}
+	
+	.to-do-children-checked {
+		text-decoration: line-through;
+		opacity: 0.375;
+	}
+	
+	ul.toggle > li {
+		list-style: none;
+	}
+	
+	ul {
+		padding-inline-start: 1.7em;
+	}
+	
+	ul > li {
+		padding-left: 0.1em;
+	}
+	
+	ol {
+		padding-inline-start: 1.6em;
+	}
+	
+	ol > li {
+		padding-left: 0.2em;
+	}
+	
+	.mono ol {
+		padding-inline-start: 2em;
+	}
+	
+	.mono ol > li {
+		text-indent: -0.4em;
+	}
+	
+	.toggle {
+		padding-inline-start: 0em;
+		list-style-type: none;
+	}
+	
+	/* Indent toggle children */
+	.toggle > li > details {
+		padding-left: 1.7em;
+	}
+	
+	.toggle > li > details > summary {
+		margin-left: -1.1em;
+	}
+	
+	.selected-value {
+		display: inline-block;
+		padding: 0 0.5em;
+		background: rgba(206, 205, 202, 0.5);
+		border-radius: 3px;
+		margin-right: 0.5em;
+		margin-top: 0.3em;
+		margin-bottom: 0.3em;
+		white-space: nowrap;
+	}
+	
+	.collection-title {
+		display: inline-block;
+		margin-right: 1em;
+	}
+	
+	time {
+		opacity: 0.5;
+	}
+	
+	.icon {
+		display: inline-block;
+		max-width: 1.2em;
+		max-height: 1.2em;
+		text-decoration: none;
+		vertical-align: text-bottom;
+		margin-right: 0.5em;
+	}
+	
+	img.icon {
+		border-radius: 3px;
+	}
+	
+	.user-icon {
+		width: 1.5em;
+		height: 1.5em;
+		border-radius: 100%;
+		margin-right: 0.5rem;
+	}
+	
+	.user-icon-inner {
+		font-size: 0.8em;
+	}
+	
+	.text-icon {
+		border: 1px solid #000;
+		text-align: center;
+	}
+	
+	.page-cover-image {
+		display: block;
+		object-fit: cover;
+		width: 100%;
+		height: 30vh;
+	}
+	
+	.page-header-icon {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+	
+	.page-header-icon-with-cover {
+		margin-top: -0.72em;
+		margin-left: 0.07em;
+	}
+	
+	.page-header-icon img {
+		border-radius: 3px;
+	}
+	
+	.link-to-page {
+		margin: 1em 0;
+		padding: 0;
+		border: none;
+		font-weight: 500;
+	}
+	
+	p > .user {
+		opacity: 0.5;
+	}
+	
+	td > .user,
+	td > time {
+		white-space: nowrap;
+	}
+	
+	input[type="checkbox"] {
+		transform: scale(1.5);
+		margin-right: 0.6em;
+		vertical-align: middle;
+	}
+	
+	p {
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+	}
+	
+	.image {
+		border: none;
+		margin: 1.5em 0;
+		padding: 0;
+		border-radius: 0;
+		text-align: center;
+	}
+	
+	.code,
+	code {
+		background: rgba(135, 131, 120, 0.15);
+		border-radius: 3px;
+		padding: 0.2em 0.4em;
+		border-radius: 3px;
+		font-size: 85%;
+		tab-size: 2;
+	}
+	
+	code {
+		color: #eb5757;
+	}
+	
+	.code {
+		padding: 1.5em 1em;
+	}
+	
+	.code-wrap {
+		white-space: pre-wrap;
+		word-break: break-all;
+	}
+	
+	.code > code {
+		background: none;
+		padding: 0;
+		font-size: 100%;
+		color: inherit;
+	}
+	
+	blockquote {
+		font-size: 1.25em;
+		margin: 1em 0;
+		padding-left: 1em;
+		border-left: 3px solid rgb(55, 53, 47);
+	}
+	
+	.bookmark {
+		text-decoration: none;
+		max-height: 8em;
+		padding: 0;
+		display: flex;
+		width: 100%;
+		align-items: stretch;
+	}
+	
+	.bookmark-title {
+		font-size: 0.85em;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		height: 1.75em;
+		white-space: nowrap;
+	}
+	
+	.bookmark-text {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.bookmark-info {
+		flex: 4 1 180px;
+		padding: 12px 14px 14px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	
+	.bookmark-image {
+		width: 33%;
+		flex: 1 1 180px;
+		display: block;
+		position: relative;
+		object-fit: cover;
+		border-radius: 1px;
+	}
+	
+	.bookmark-description {
+		color: rgba(55, 53, 47, 0.6);
+		font-size: 0.75em;
+		overflow: hidden;
+		max-height: 4.5em;
+		word-break: break-word;
+	}
+	
+	.bookmark-href {
+		font-size: 0.75em;
+		margin-top: 0.25em;
+	}
+	
+	.sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+	.code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+	.serif { font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif; }
+	.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+	.pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+	
+	.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+	
+	.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+	
+	.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+	
+	.highlight-default {
+	}
+	.highlight-gray {
+		color: rgb(155,154,151);
+	}
+	.highlight-brown {
+		color: rgb(100,71,58);
+	}
+	.highlight-orange {
+		color: rgb(217,115,13);
+	}
+	.highlight-yellow {
+		color: rgb(223,171,1);
+	}
+	.highlight-teal {
+		color: rgb(15,123,108);
+	}
+	.highlight-blue {
+		color: rgb(11,110,153);
+	}
+	.highlight-purple {
+		color: rgb(105,64,165);
+	}
+	.highlight-pink {
+		color: rgb(173,26,114);
+	}
+	.highlight-red {
+		color: rgb(224,62,62);
+	}
+	.highlight-gray_background {
+		background: rgb(235,236,237);
+	}
+	.highlight-brown_background {
+		background: rgb(233,229,227);
+	}
+	.highlight-orange_background {
+		background: rgb(250,235,221);
+	}
+	.highlight-yellow_background {
+		background: rgb(251,243,219);
+	}
+	.highlight-teal_background {
+		background: rgb(221,237,234);
+	}
+	.highlight-blue_background {
+		background: rgb(221,235,241);
+	}
+	.highlight-purple_background {
+		background: rgb(234,228,242);
+	}
+	.highlight-pink_background {
+		background: rgb(244,223,235);
+	}
+	.highlight-red_background {
+		background: rgb(251,228,228);
+	}
+	.block-color-default {
+		color: inherit;
+		fill: inherit;
+	}
+	.block-color-gray {
+		color: rgba(55, 53, 47, 0.6);
+		fill: rgba(55, 53, 47, 0.6);
+	}
+	.block-color-brown {
+		color: rgb(100,71,58);
+		fill: rgb(100,71,58);
+	}
+	.block-color-orange {
+		color: rgb(217,115,13);
+		fill: rgb(217,115,13);
+	}
+	.block-color-yellow {
+		color: rgb(223,171,1);
+		fill: rgb(223,171,1);
+	}
+	.block-color-teal {
+		color: rgb(15,123,108);
+		fill: rgb(15,123,108);
+	}
+	.block-color-blue {
+		color: rgb(11,110,153);
+		fill: rgb(11,110,153);
+	}
+	.block-color-purple {
+		color: rgb(105,64,165);
+		fill: rgb(105,64,165);
+	}
+	.block-color-pink {
+		color: rgb(173,26,114);
+		fill: rgb(173,26,114);
+	}
+	.block-color-red {
+		color: rgb(224,62,62);
+		fill: rgb(224,62,62);
+	}
+	.block-color-gray_background {
+		background: rgb(235,236,237);
+	}
+	.block-color-brown_background {
+		background: rgb(233,229,227);
+	}
+	.block-color-orange_background {
+		background: rgb(250,235,221);
+	}
+	.block-color-yellow_background {
+		background: rgb(251,243,219);
+	}
+	.block-color-teal_background {
+		background: rgb(221,237,234);
+	}
+	.block-color-blue_background {
+		background: rgb(221,235,241);
+	}
+	.block-color-purple_background {
+		background: rgb(234,228,242);
+	}
+	.block-color-pink_background {
+		background: rgb(244,223,235);
+	}
+	.block-color-red_background {
+		background: rgb(251,228,228);
+	}
+	.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+	.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+	.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+	.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+	.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+	.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+	.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+	.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+	.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+	.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+	
+	.checkbox {
+		display: inline-flex;
+		vertical-align: text-bottom;
+		width: 16;
+		height: 16;
+		background-size: 16px;
+		margin-left: 2px;
+		margin-right: 5px;
+	}
+	
+	.checkbox-on {
+		background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+	}
+	
+	.checkbox-off {
+		background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+	}
+		
+	</style></head><body><a href="/privacy.html">English Version</a><article id="e65b0d24-2b59-4a39-b55e-92216f288d93" class="page sans"><header><h1 class="page-title">安全与隐私</h1></header><div class="page-body"><h3 id="b24bf4a2-d55e-408b-8448-e286791b8040" class="">Portal <strong>如何保护您的线上交流</strong></h3><p id="f6e67321-3add-42a1-879a-951d5a541fd3" class="">当互联网流量通过本地或国家/地区网络传播时，最容易受到监视。</p><p id="00a9fe1f-0854-4af6-a7d5-aa4f8a38d06c" class="">Portal 通过在您的地区网络内部传播时对互联网通信进行加密并对其进行加密直到到达 Shadowport 服务器为止，来帮助您保持通信的私密性。使用 Portal 对流量进行加密后，网络围观者将无法检查您访问的网站或您正在传输的信息。</p><p id="15d364af-0085-42ef-afc6-9929ea0f1b9c" class="">Portal 还可以帮助您恢复对安全的端到端通信工具的访问权限，而该工具在您所在的国家/地区可能无法访问。</p><h3 id="75783ad9-f58d-486c-966b-f337e5bc10a9" class=""><strong>加密标准</strong></h3><p id="08c403a8-f898-4ca8-88fc-8b7b482833aa" class="">Portal 使用 AEAD 256 位 Chacha2020 IETF Poly 1305 密码对设备和 Shadowport 服务器之间的通信进行加密。 AEAD 密码提供机密性，完整性和真实性，并在现代硬件上表现出出色的性能。</p><h3 id="32ecf487-8510-48a7-ac28-cbc07924fe0a" class=""><strong>匿名指标和日志</strong></h3><p id="e7e9b5f9-1f75-414b-b139-90f508e17ee2" class="">Portal 仅跟踪每个访问密钥使用的带宽，即“已传输的字节数”。此信息允许服务器管理员根据需要与云服务器提供商调整其带宽订阅，但不允许他们查看通过 Portal 服务器的实际信息。</p><p id="238db5d8-29ca-4ebd-99b7-520d6fc7d950" class="">Portal 不会为每个访问密钥记录任何其他信息。所以，服务器无法提供除传输的字节以外的任何其他信息。</p><hr id="dfaa0e41-5f38-4d92-8c1e-a2438d27cb73"/><h2 id="a4058962-7011-4df8-b25d-c03e110b73c6" class=""><strong>安全和隐私常见问题解答</strong></h2><h3 id="b2887454-d91a-4811-b653-75b0e32636fd" class="">Portal <strong>可以使我匿名在线吗？</strong></h3><p id="25dbd816-9012-407c-b3aa-44769f50c957" class="">不可以，Portal 不是匿名工具。但 Portal 可保护您的隐私免受潜在的网络围观者的侵害。</p><p id="10053bb6-dc85-4af7-9275-d453c1774d2a" class="">Portal 无法为您提供所访问网站的完全匿名信息，因为它们在您登录时仍可以识别您的身份，有时还可以通过浏览器指纹识别等技术来识别您的身份。对于移动应用程序，大多数现代智能手机均具有 API，这些 API 可让已安装的应用程序依赖于嵌入式 GPS 来独立于您的代理检索您的位置。</p><p id="2044a1f1-2967-4800-97a4-2054220c7c33" class="">通常，VPN 提供重要的保护，尤其是免受互联网监视，但是在线操作始终存在风险。即使使用VPN，如果 ISP（网络供应商）已经知道您的身份并可以观察您的网络流量，则它可能能够确定 Shadowport 服务器的 IP 地址。此信息可用于阻止对 Shadowport 服务器的访问或了解使用模式，例如您通常在线时以及可能的粗略位置。</p><h3 id="b64ecae1-1183-4b59-96a5-c698c5fb0e8d" class=""><strong>有人可以告诉我是否正在使用 Portal 吗？</strong></h3><p id="0963eb23-d005-4c3e-9b46-1aabd370d709" class="">有可能。您访问的平台和服务很可能能够确定您的连接来自云服务器。有时，他们可以推断您正在使用 VPN，但他们将无法看到您的互联网流量的内容。</p><h3 id="5f8213a4-95ae-4d8e-9864-d339de024137" class="">Portal <strong>是否可以保护我免受所有可能的网络威胁？</strong></h3><p id="13e02afe-60de-4066-979b-74778a2f4eba" class="">不可以。没有一种工具可以保护您免受所有可能的网络威胁。 Portal 使您可以访问开放的互联网，并通过加密流量来增加隐私，但是我们建议您采取其他预防措施来保护自己免受其他类型的攻击，如恶意软件和网络钓鱼。</p><p id="8ec92c68-a792-4bb2-80c3-f17ccec711f0" class="">为了加强您的在线防御，请考虑与您组织的网络安全专家合作。</p><h3 id="b78570d4-680c-416a-be2e-ba8a89b68d72" class=""><strong>使用 VPN 是否合法？</strong></h3><p id="60adb53a-31d6-4857-9f13-589cc9c4da04" class="">在操作或使用 Portal 之前，请检查您计划使用的云提供商的当地法律，法规和服务条款。</p></div></article>
+	<footer>
+		<p>© Shadowport</p>
+  
+	</footer>
+
+
+</body></html>
