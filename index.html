@@ -15,57 +15,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>Portal</title>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142376602-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "UA-142376602-2");
-  </script>
-  <!--script>
-    function getUrlParameter(sParam) {
-      var sPageURL = window.location.search.substring(1);
-      var sURLVariables = sPageURL.split("&");
-      for (var i = 0; i < sURLVariables.length; i++) {
-        var sParameterName = sURLVariables[i].split("=");
-        if (sParameterName[0] == sParam) {
-          return sParameterName[1];
-        }
-      }
-    }
-    $(document).ready(function () {
-      var subscribed = getUrlParameter("subscribed");
-
-      if (subscribed === "true") {
-        [].forEach.call(
-          document.querySelectorAll(
-            "#android-button, #field-email, .button-wrapper, #enter-label, .right-button, #submit-button"
-          ),
-          function (el) {
-            el.classList.add("extended");
-          }
-        );
-        [].forEach.call(
-          document.querySelectorAll(
-            "#android-button, #success-message, #success-message-mobile, .js-cm-form"
-          ),
-          function (el) {
-            el.classList.add("subscribed");
-          }
-        );
-      }
-    });
-  </script-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <link rel=stylesheet href=resources/css/style.css>
 
   <script src="resources/js/mobile-helper.js"></script>
   <script defer src="resources/js/emoji-pop.js"></script>
-  <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
 </head>
 
 <body>
@@ -114,9 +69,9 @@
             <div></div>
           </a>
 
-          <a href="/resources/app-armv7-debug.apk" id="macos-button">
+          <!--a href="/resources/app-armv7-debug.apk" id="macos-button">
             <div></div>
-          </a>
+          </a-->
 
         </div>
 
