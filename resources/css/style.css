@@ -1,3 +1,42 @@
+@font-face {
+  font-family: "Graphik";
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/Graphik-Regular.eot");
+  src: url("fonts/Graphik-Regular.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Graphik-Regular.woff2") format("woff2"),
+    url("fonts/Graphik-Regular.woff") format("woff"),
+    url("fonts/Graphik-Regular.svg#Graphik-Regular") format("svg");
+  unicode-range: U+0020-00FE;
+}
+
+@font-face {
+  font-family: "Graphik";
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 500;
+  src: url("fonts/Graphik-Medium.eot");
+  src: url("fonts/Graphik-Medium.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Graphik-Medium.woff2") format("woff2"),
+    url("fonts/Graphik-Medium.woff") format("woff"),
+    url("fonts/Graphik-Medium.svg#Graphik-Medium") format("svg");
+  unicode-range: U+0020-00FE;
+}
+
+@font-face {
+  font-family: "Graphik";
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 600;
+  src: url("fonts/Graphik-Semibold.eot");
+  src: url("fonts/Graphik-Semibold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Graphik-Semibold.woff2") format("woff2"),
+    url("fonts/Graphik-Semibold.woff") format("woff"),
+    url("fonts/Graphik-Semibold.svg#Graphik-Semibold") format("svg");
+  unicode-range: U+0020-00FE;
+}
+
 :root {
   color-scheme: light dark;
   --background-color1: #fff;
@@ -22,7 +61,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
-  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "Graphik", "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 400;
   margin: 0;
@@ -184,7 +223,7 @@ nav ul a:active {
 
 h1 {
   color: var(--text-color);
-  font-size: 3.25em;
+  font-size: 3.5em;
   line-height: 1.1em;
   margin: 0 auto 30px auto;
   margin-right: 0px;
@@ -195,7 +234,7 @@ h1 {
 
 h2 {
   color: var(--text-color);
-  font-size: 2em;
+  font-size: 1.5em;
   line-height: 1.05em;
   margin: 0 auto 30px auto;
   max-width: 524px;
