@@ -1,2 +1,4 @@
 User-agent: *
 Disallow: /access.html
+Disallow: /privacy.html
+Disallow: /privacy-cn.html
