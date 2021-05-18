@@ -3,6 +3,7 @@
   font-stretch: normal;
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url("fonts/Graphik-Regular.eot");
   src: url("fonts/Graphik-Regular.eot?#iefix") format("embedded-opentype"),
     url("fonts/Graphik-Regular.woff2") format("woff2"),
@@ -16,6 +17,7 @@
   font-stretch: normal;
   font-style: normal;
   font-weight: 500;
+  font-display: swap;
   src: url("fonts/Graphik-Medium.eot");
   src: url("fonts/Graphik-Medium.eot?#iefix") format("embedded-opentype"),
     url("fonts/Graphik-Medium.woff2") format("woff2"),
@@ -29,6 +31,7 @@
   font-stretch: normal;
   font-style: normal;
   font-weight: 600;
+  font-display: swap;
   src: url("fonts/Graphik-Semibold.eot");
   src: url("fonts/Graphik-Semibold.eot?#iefix") format("embedded-opentype"),
     url("fonts/Graphik-Semibold.woff2") format("woff2"),
