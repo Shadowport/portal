@@ -633,7 +633,10 @@ h3 {
   transition: 0.125s ease;
   will-change: transform;
 }
-h3:hover {
+h3 a:hover {
+  animation: rainbow-links 5s infinite;
+}
+h2 a:hover {
   animation: rainbow-links 5s infinite;
 }
 h3:active {
