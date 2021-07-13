@@ -4,19 +4,7 @@
   --background-color2: #fff;
   --text-color: #000;
 }
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-color1: #000;
-    --background-color2: #000;
-    --text-color: #fff;
-  }
-  #app-store-button div {
-    background: url(images/app-store-button1.svg) #000000 center no-repeat;
-  }
-  #android-store-button div {
-    background: url(images/firebase-button1.svg) #000000 center no-repeat;
-  }
-}
+
 
 body {
   -moz-osx-font-smoothing: grayscale;
@@ -249,11 +237,7 @@ h2 {
   top: 2.5px;
   width: 172px;
 }
-@media (prefers-color-scheme: dark) {
-  #app-store-button div {
-    background: url(images/connectbutton1.svg) #000000 center no-repeat;
-  }
-}
+
 
 #app-store-button {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -284,11 +268,6 @@ h2 {
   position: absolute;
   top: 2.5px;
   width: 172px;
-}
-@media (prefers-color-scheme: dark) {
-  #app-store-button div {
-    background: url(images/app-store-button1.svg) #000000 center no-repeat;
-  }
 }
 
 
@@ -323,11 +302,6 @@ h2 {
   top: 2.5px;
   width: 172px;
 }
-@media (prefers-color-scheme: dark) {
-  #android-store-button div {
-    background: url(images/firebase-button1.svg) #000000 center no-repeat;
-  }
-}
 
 
 #macos-button {
@@ -359,11 +333,6 @@ h2 {
   position: absolute;
   top: 2.5px;
   width: 172px;
-}
-@media (prefers-color-scheme: dark) {
-  #macos-button div {
-    background: url(images/macos1.svg) #000000 center no-repeat;
-  }
 }
 
 
